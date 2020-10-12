@@ -23,3 +23,44 @@ body
     /* added some styling to '.mainNav' to change the colour of the navigation bar */
     background-color: #8d965b;
 }
+
+/* targets the ul area */
+.mainNav ul
+{
+    /* removes the bullet points, margin and default left-hand padding */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* targets each list item */
+.mainNav ul li
+{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* targets the 'a' (link) areas of each list item */
+.mainNav ul li a 
+{
+    /* elements with a value of 'inline' can not be assigned a width. */
+    /* So set display to 'inline-block'. */
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+}
+
+/* resize all of the images via the selector tag 'img' to more suitable dimensions */
+img
+{
+    width: 100%;
+}
+
+.mainContent
+{
+    /* adds a little margin around the main text and images of the page */
+    margin: 0 10px;
+}
