@@ -64,3 +64,10 @@ img
     /* adds a little margin around the main text and images of the page */
     margin: 0 10px;
 }
+
+/* make div element '.news' a flexbox container - this will allow items inside
+   to change size depending on the width of the flexbox (for devices with larger screens). */
+.news 
+{
+    display: flex;
+}
