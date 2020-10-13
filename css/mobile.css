@@ -70,4 +70,11 @@ img
 .news 
 {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.newsItems
+{
+    /* sets a width of 50% percent per .newsItem, meaning space for 2 columns of item. */
+    flex-basis: 50%;
 }
