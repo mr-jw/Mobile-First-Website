@@ -1,0 +1,30 @@
+
+/* limits the site to a maximum width of 1200px when viewed on devices larger than 720px. */
+header, .mainContent, .row
+{
+    max-width: 1200px;
+    padding: 0 5px;
+    margin: auto;
+}
+
+/* add padding around the navigation */
+.mainNav
+{
+    padding: 8px 0;
+    height: auto;
+}
+
+/* use flexbox to have the navigation items flow horizontally */
+.mainNav .row ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* tidy up borders on links */
+.mainNav > div > ul > li 
+{
+    border: none;
+    padding: 0;
+}
