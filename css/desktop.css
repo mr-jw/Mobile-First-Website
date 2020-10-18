@@ -7,6 +7,12 @@ header, .mainContent, .row
     margin: auto;
 }
 
+header
+{
+    justify-content: flex-end;
+    padding: 0 0 0 5px;
+}
+
 /* add padding around the navigation */
 .mainNav
 {
@@ -27,4 +33,75 @@ header, .mainContent, .row
 {
     border: none;
     padding: 0;
+}
+
+/* make the .mainContent div a flex container. */
+.mainContent 
+{
+    display: flex;
+}
+
+/* make <main> tag, the first child out of two in .mainContent cover 70% of its size. */
+main
+{
+    flex-basis: 70%;
+}
+
+/* give .sideBar, the second child out of two in .mainContent a colour and flex-basis of 30% */
+.sideBar
+{
+    background-color: #ddceaa;
+    flex-basis: 30%;
+}
+
+.newsItem
+{
+    flex-basis: 33%;
+}
+
+.strapLine
+{
+    display: flex;
+}
+
+.strapLinetxt, .strapLineImg
+{
+    padding: 0 5px;
+    flex-basis: 50%;
+}
+
+.strapLineImg > img
+{
+    width: 100%;
+}
+
+/* Mobile focused feature. It is redundant in the desktop design, so hide it. */
+.burgerMenu
+{
+    display: none;
+}
+
+.logo
+{
+    padding: 5px 0px;
+    flex-basis: 85%;
+    position: relative;
+}
+
+.logo img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loginLinks
+{
+    flex-basis: 15%;
+}
+
+.search
+{
+    padding: 5px 0;
+    flex-basis: 40%;
 }
